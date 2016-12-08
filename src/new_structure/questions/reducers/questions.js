@@ -1,6 +1,7 @@
+// Custom
 import {
   FETCH_QUESTIONS
-} from '../actions/index';
+} from '../../app/actions/index';
 
 export default function(state = [], action) {
 	switch (action.type) {

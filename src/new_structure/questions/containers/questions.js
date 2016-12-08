@@ -1,9 +1,14 @@
+// React
 import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
-import { fetchQuestions, getNextQuestion, setCurrentQuestion, startOver } from '../actions/index';
 import { Link, browserHistory } from 'react-router';
+
+// Redux
+import { connect } from 'react-redux';
+
+// Custom
+import { fetchQuestions, getNextQuestion, setCurrentQuestion, startOver } from '../app/actions/index';
 import Question from '../components/question';
-import Button from '../components/button';
+import Button from '../../button/components/button';
 
 class QuestionsContainer extends Component {
 	static contextTypes = {

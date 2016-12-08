@@ -1,7 +1,8 @@
+// Custom
 import {
   GET_NEXT_QUESTION,
   START_OVER
-} from '../actions/index';
+} from '../../app/actions/index';
 
 export default function(state = [], action) {
 	switch (action.type) {

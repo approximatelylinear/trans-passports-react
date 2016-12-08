@@ -1,15 +1,22 @@
 /* global DEBUG	*/
+
+// React
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, browserHistory } from 'react-router';
+
+// Redux
 import { Provider } from 'react-redux';
 import { compose, createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import { Router, browserHistory } from 'react-router';
-import reducers from './reducers';
-import routes from './routes';
 import promise from 'redux-promise';
 import createLogger from 'redux-logger';
 import persistState from 'redux-localstorage';
+
+// Custom
+import reducers from './reducers';
+import routes from './routes';
+
 
 const logger = createLogger();
 const createPersistentStore = compose(persistState());
